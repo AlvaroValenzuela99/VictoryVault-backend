@@ -11,7 +11,7 @@ function Lol() {
     setShowTeamDiv(true);
     setButtonClicked(true);
   };
-  
+
   const handleDissolveTeamClick = () => {
     setShowTeamDiv(false);
     setButtonClicked(false);
@@ -33,7 +33,8 @@ function Lol() {
       {/* Div con los huecos del equipo (se mostrará si showTeamDiv es true) */}
       {showTeamDiv && (
         <div className='team-div'>
-          <p>Team slots:</p>
+          <p>Team name: XXXXXX</p>
+
           <ul>
             <li>Tu nombre (ocupado)</li>
             <li>Hueco 2</li>
@@ -42,6 +43,8 @@ function Lol() {
             <li>Hueco 5</li>
           </ul>
 
+          <p>Copia este link para invitar a tus amigos: XXXX</p>
+          
           <button onClick={handleDissolveTeamClick}>Dissolve team</button>
         </div>
       )}

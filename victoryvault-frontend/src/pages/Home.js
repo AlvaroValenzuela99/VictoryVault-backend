@@ -8,7 +8,7 @@ function Home() {
             <p>Play, Win and Earn</p>
             <p>Compete against other players and win Real Money</p>
 
-            <Link to='/fifa'>Fifa</Link>
+            <Link to='/lol'>League of Legends</Link>
         </div>
     );
 }

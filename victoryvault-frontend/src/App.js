@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Fifa from './pages/Fifa';
+import Lol from './pages/Lol';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
         {/* Ruta Home */}
         <Route path="/" element={<Home />} />
 
-        {/* Ruta FIFA*/}
-        <Route path="/fifa" element={<Fifa />} />
+        {/* Ruta Lol*/}
+        <Route path="/lol" element={<Lol />} />
       </Routes>
     </BrowserRouter>
   );

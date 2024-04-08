@@ -6,7 +6,6 @@
 		<groupId>dev.alvarovalenzuela.victoryvault</groupId>
 		<artifactId>pom</artifactId>
 		<version>1.0.0</version>
-		<relativePath/>
 	</parent>
 	<groupId>dev.alvarovalenzuela.victoryvault</groupId>
 	<artifactId>backend</artifactId>

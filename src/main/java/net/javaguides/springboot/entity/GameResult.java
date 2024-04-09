@@ -1,16 +1,15 @@
 package net.javaguides.springboot.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
-public class MatchResult {
+@Entity
+@Table(name = "game_result")
+public class GameResult {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
-    private Match match;
+    private Game game;
     @ManyToOne
     private User winner;
     private int scorePlayer1;

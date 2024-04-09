@@ -8,20 +8,23 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
-    @Column(unique = true)
+    @Column(unique = true, name = "username")
     private String username;
+    @Column(name = "password")
     private String password;
+    @Column(name = "email")
     private String email;
+
+    public User() {
+    }
 
     public User(Long id, String username, String password, String email) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.email = email;
-    }
-
-    public User() {
     }
 
     public Long getId() {
